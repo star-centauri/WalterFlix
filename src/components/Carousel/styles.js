@@ -41,30 +41,6 @@ export const VideoCardList = styled.ul`
   flex-direction: row;
   overflow: hidden;
   
-  &:hover {
-    overflow-x: auto;
-  }
-
-  &::-webkit-scrollbar-track
-  {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    background-color: #0a030d;
-  }
-
-  &::-webkit-scrollbar
-  {
-    width: 10px;
-    background-color: #0a030d;
-  }
-
-  &::-webkit-scrollbar-thumb
-  {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #ffffff1f;
-  }
-
   li {
     margin-right: 16px;
   }
@@ -73,7 +49,7 @@ export const VideoCardList = styled.ul`
 export const VideoCardGroupContainer = styled.section`
   color: white;
   min-height: 197px;
-  margin: 0px 50px 16px 50px;
-  padding-bottom: 30px;
+  margin: 0px 50px 0px 50px;
+  padding-bottom: 32px;
   border-bottom: solid 1px #aaaaaa8a;
 `;
