@@ -1,32 +1,87 @@
-import React from 'react';
-import PageDefault from '../../../components/PageDefault';
+/* eslint linebreak-style: ["error", "windows"] */
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PageDefault from '../../../components/PageDefault';
+import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
 
 function CadastroCategoria() {
-    return (
-        <PageDefault>
-            <h1>Cadastro de Categoria</h1>
+  const valuesDefault = {
+    nome: '',
+    descricao: '',
+    cor: '#000',
+  };
+  const [categorias, setCategorias] = useState([]);
+  const [newCategoria, setNewCategoria] = useState(valuesDefault);
 
-            <form>
+  function setValues(key, value) {
+    setNewCategoria({
+      ...newCategoria,
+      [key]: value,
+    });
+  }
 
-                <label>
-                    Nome da Categoria:
-                    <input
-                    type="text"
-                    />
-                </label>
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setValues(
+      name,
+      value,
+    );
+  }
 
-                <button>
-                    Cadastrar
-                </button>
-            </form>
+  return (
+    <PageDefault>
+      <h1>
+        Cadastro de Categoria:
+        {newCategoria.nome}
+      </h1>
 
+      <form
+        style={{ padding: '10px 50px' }}
+        onSubmit={(event) => {
+          event.preventDefault();
+          setCategorias([...categorias, newCategoria]);
+          setNewCategoria(valuesDefault);
+        }}
+      >
 
-            <Link to="/">
-            Ir para home
-            </Link>
-        </PageDefault>
-    )
+        <FormField
+          label="Nome:"
+          value={newCategoria.nome}
+          onChange={handleChange}
+          name="nome"
+          type="text"
+        />
+        <FormField
+          label="Descrição:"
+          value={newCategoria.descricao}
+          onChange={handleChange}
+          name="descricao"
+          type="textarea"
+          as="textarea"
+        />
+        <FormField
+          label="Cor:"
+          value={newCategoria.cor}
+          onChange={handleChange}
+          name="cor"
+          type="color"
+        />
+
+        <Button>
+          Cadastrar
+        </Button>
+      </form>
+
+      <ul>
+        {categorias.map((categoria, index) => <li key={index}>{categoria.nome}</li>)}
+      </ul>
+
+      <Link to="/">
+        Ir para home
+      </Link>
+    </PageDefault>
+  );
 }
 
 export default CadastroCategoria;
