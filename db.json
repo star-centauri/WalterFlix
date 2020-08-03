@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Javascript",
+            "descricao": "Um linguagem que é só amor",
+            "cor": ""
+        },
+        {
+            "id": 2,
+            "nome": "React",
+            "descricao": "Biblioteca muito boa",
+            "cor": ""
+        }
+    ]
+}

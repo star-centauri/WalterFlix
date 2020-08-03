@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import styled from 'styled-components';
 
 const Button = styled.button`
@@ -5,7 +6,7 @@ const Button = styled.button`
     border: 1px solid var(--purpleLight);
     box-sizing: border-box;
     cursor: pointer;
-    padding: 16px 24px;
+    padding: 13px 20px;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -17,7 +18,9 @@ const Button = styled.button`
 
     &:hover,
     &:focus {
-        opacity: .5;
+        opacity: 1;
+        background-color: var(--purpleLight);
+        color: var(--black);
     }
 `;
 

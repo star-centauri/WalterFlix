@@ -85,18 +85,18 @@ export const BannerMainContainer = styled.section`
     left: 0;
     right: 0;
     margin: auto;
-    height: 20%;
+    height: 40%;
   }
 
   &:before {
     top: 0;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: #181818bf;
   }
 
   &:after {
     bottom: 0;
-    background: linear-gradient(0deg, #0A030D 0%, transparent 100%);
+    background: linear-gradient(0deg, var(--black) 0%, transparent 100%);
   }
 `;
 
