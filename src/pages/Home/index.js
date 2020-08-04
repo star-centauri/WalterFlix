@@ -1,38 +1,51 @@
-import React from 'react';
+/* eslint-disable linebreak-style */
+import React, { useEffect, useState } from 'react';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
-
-import dados from '../../data/dados_iniciais.json';
 import PageDefault from '../../components/PageDefault';
+import categoriesRepository from '../../repositories/categorias';
 
 function Home() {
-  return (
-    <PageDefault>
-      <BannerMain
-        videoTitle={dados.categorias[0].videos[0].titulo}
-        url={dados.categorias[0].videos[0].url}
-        videoDescription={"O que é Front-End? Trabalhando na área."}
-      />
+  const [dados, setDados] = useState([]);
 
-      <Carousel 
-        ignoreFirstVideo
-        category={dados.categorias[0]}
-      />
-      <Carousel 
-        category={dados.categorias[1]}
-      />
-      <Carousel 
-        category={dados.categorias[2]}
-      />
-      <Carousel 
-        category={dados.categorias[3]}
-      />
-      <Carousel 
-        category={dados.categorias[4]}
-      />
-      <Carousel 
-        category={dados.categorias[5]}
-      /> 
+  useEffect(() => {
+    categoriesRepository.getAllCategoriesWithVideos()
+      .then((categoriesWithVideos) => setDados(categoriesWithVideos))
+      .catch((err) => {
+        alert(err.message);
+        console.warn(err.message);
+      });
+  }, []);
+
+  return (
+    <PageDefault paddingAll={0}>
+      {dados.length === 0 && (<div>Loading...</div>)}
+
+      {dados.map((categorie, index) => {
+        if (index === 0) {
+          return (
+            <div key={categorie.id}>
+              <BannerMain
+                videoTitle={categorie.videos[0].titulo}
+                url={categorie.videos[0].url}
+                videoDescription="Em homenagem ao meu filho de quatro patas =^-^="
+              />
+
+              <Carousel
+                ignoreFirstVideo
+                category={categorie}
+              />
+            </div>
+          );
+        }
+
+        return (
+          <Carousel
+            key={categorie.id}
+            category={categorie}
+          />
+        );
+      })}
     </PageDefault>
   );
 }
