@@ -1,204 +1,210 @@
 {
-    "categorias": [
-        {
-            "id": 1,
-            "titulo": "Vanilla JS",
-            "cor": "#9E6BBF",
-            "link_extra": {
-                "text": "Formação de Javascript na Alura",
-                "url": "https://www.alura.com.br/cursos-online-front-end"
-            }
-        },
-        {
-            "id": 2,
-            "titulo": "React.JS",
-            "cor": "#9E6BBF",
-            "link_extra": {
-                "text": "Formação de React na Alura",
-                "url": "https://www.alura.com.br/cursos-online-front-end"
-            }
-        },
-        {
-            "id": 3,
-            "titulo": "Angular JS",
-            "cor": "#9E6BBF",
-            "link_extra": {
-                "text": "Formação de Angular na Alura",
-                "url": "https://www.alura.com.br/cursos-online-front-end"
-            }
-        },
-        {
-            "id": 4,
-            "titulo": "Vue.JS",
-            "cor": "#9E6BBF",
-            "link_extra": {
-                "text": "Formação de Vue na Alura",
-                "url": "https://www.alura.com.br/cursos-online-front-end"
-            }
-        },
-        {
-            "id": 5,
-            "titulo": "Typescript",
-            "cor": "#9E6BBF",
-            "link_extra": {
-                "text": "Formação de Typescript na Alura",
-                "url": "https://www.alura.com.br/cursos-online-front-end"
-            }
-        },
-        {
-            "id": 6,
-            "titulo": "Javascript Moderno",
-            "cor": "#9E6BBF",
-            "link_extra": {
-                "text": "Formação de Javascript moderno (es6, 7, 8+) na Alura",
-                "url": "https://www.alura.com.br/cursos-online-front-end"
-            }
-        }
-    ],
-    "videos": [
-        {
-            "id": 1,
-            "categoriaId": 1,
-            "titulo": "Quem disse que gato não programa?",
-            "url": "https://www.youtube.com/watch?v=em41kgwRsxs"
-        },
-        {
-            "id": 2,
-            "categoriaId": 1,
-            "titulo": "Vanilla JS: Explicando a piada",
-            "url": "https://www.youtube.com/watch?v=TQjHFESNX30"
-        },
-        {
-            "id": 3,
-            "categoriaId": 1,
-            "titulo": "Programamos uma Ferramenta pro Youtube com JavaScript Puro (Vanilla JS) // Mão no Código #33",
-            "url": "https://www.youtube.com/watch?v=ScGwWsoC_-I"
-        },
-        {
-            "id": 4,
-            "categoriaId": 1,
-            "titulo": "Manipulando a DOM com Vanilla JS",
-            "url": "https://www.youtube.com/watch?v=aVB67Y31E4A"
-        },
-        {
-            "id": 5,
-            "categoriaId": 1,
-            "titulo": "Why 'vanilla JavaScript first' might NOT be the best approach!",
-            "url": "https://www.youtube.com/watch?v=Gwup7MV_fXs"
-        },
-        {
-            "id": 6,
-            "categoriaId": 1,
-            "titulo": "JS Frameworks OR Vanilla JavaScript?",
-            "url": "https://www.youtube.com/watch?v=PSiXpsV5ZQc"
-        },
-        {
-            "id": 7,
-            "categoriaId": 2,
-            "titulo": "React JS - MELHOR GUIA para Iniciantes! (2020)",
-            "url": "https://www.youtube.com/watch?v=Ws9WVHhNq5M"
-        },
-        {
-            "id": 8,
-            "categoriaId": 2,
-            "titulo": "O que é ReactJS? - Série ReactJS",
-            "url": "https://www.youtube.com/watch?v=cEczlv669Oo"
-        },
-        {
-            "id": 9,
-            "categoriaId": 2,
-            "titulo": "O que é React JS? #HipstersPontoTube",
-            "url": "https://www.youtube.com/watch?v=6IuQUgeDPg0"
-        },
-        {
-            "id": 10,
-            "categoriaId": 2,
-            "titulo": "Learn REACT JS in just 5 MINUTES (2020)",
-            "url": "https://www.youtube.com/watch?v=MRIMT0xPXFI"
-        },
-        {
-            "id": 11,
-            "categoriaId": 3,
-            "titulo": "O que é Angular e AngularJS? #HipstersPontoTube",
-            "url": "https://www.youtube.com/watch?v=LFlNU30u7d8"
-        },
-        {
-            "id": 12,
-            "categoriaId": 3,
-            "titulo": "ANGULAR EM 7 MINUTOS - Tudo Que Você Precisa saber!",
-            "url": "https://www.youtube.com/watch?v=YX0y1FMlb8I"
-        },
-        {
-            "id": 13,
-            "categoriaId": 3,
-            "titulo": "5 motivos para aprender Angular",
-            "url": "https://www.youtube.com/watch?v=7tU5lEdWm_M"
-        },
-        {
-            "id": 14,
-            "categoriaId": 3,
-            "titulo": "Ainda vale a pena usar AngularJS? (Em 2019)",
-            "url": "https://www.youtube.com/watch?v=PSQLcLlbVZM"
-        },
-        {
-            "id": 15,
-            "categoriaId": 4,
-            "titulo": "VueJS em 1 hora! (Teoria e prática)",
-            "url": "https://www.youtube.com/watch?v=cSa-SMVMGsE"
-        },
-        {
-            "id": 16,
-            "categoriaId": 4,
-            "titulo": "Vue.js através de exemplos",
-            "url": "https://www.youtube.com/watch?v=mYIivScX2uk"
-        },
-        {
-            "id": 17,
-            "categoriaId": 4,
-            "titulo": "Por que React e não VueJS?",
-            "url": "https://www.youtube.com/watch?v=TPdUM1R9lQw"
-        },
-        {
-            "id": 18,
-            "categoriaId": 4,
-            "titulo": "Por que escolher VueJS? - Comparativo VueJS, Angular e React.",
-            "url": "https://www.youtube.com/watch?v=jk3NTOHIfFE"
-        },
-        {
-            "id": 19,
-            "categoriaId": 5,
-            "titulo": "Imersão React Live #02 - TypeScript no nosso projeto React, com Lucas Santos da Microsoft",
-            "url": "https://www.youtube.com/watch?v=SpWFDTvgS9k"
-        },
-        {
-            "id": 20,
-            "categoriaId": 5,
-            "titulo": "TypeScript com NodeJS do jeito certo! | Diego Fernandes",
-            "url": "https://www.youtube.com/watch?v=aTf8QTjw4RE"
-        },
-        {
-            "id": 21,
-            "categoriaId": 5,
-            "titulo": "SOLID com TypeScript // Live #37",
-            "url": "https://www.youtube.com/watch?v=899Qa6sQcRc"
-        },
-        {
-            "id": 22,
-            "categoriaId": 6,
-            "titulo": "Curso Web Moderno com JavaScript 2019 COMPLETO + Projetos",
-            "url": "https://www.youtube.com/watch?v=Rrx-eRzW0Xc"
-        },
-        {
-            "id": 23,
-            "categoriaId": 6,
-            "titulo": "[POLÊMICA] Pare de pensar em classes! | Série - POO para JS",
-            "url": "https://www.youtube.com/watch?v=po9Ik_v5koU"
-        },
-        {
-            "id": 24,
-            "categoriaId": 6,
-            "titulo": "Aula 1 - Curso Javascript moderno - Hello World no VSCode com NodeJS",
-            "url": "https://www.youtube.com/watch?v=jbBq6OKjj24"
-        }
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Vanilla JS",
+      "cor": "#9E6BBF",
+      "link_extra": {
+        "text": "Formação de Javascript na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "React.JS",
+      "cor": "#9E6BBF",
+      "link_extra": {
+        "text": "Formação de React na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Angular JS",
+      "cor": "#9E6BBF",
+      "link_extra": {
+        "text": "Formação de Angular na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Vue.JS",
+      "cor": "#9E6BBF",
+      "link_extra": {
+        "text": "Formação de Vue na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Typescript",
+      "cor": "#9E6BBF",
+      "link_extra": {
+        "text": "Formação de Typescript na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      }
+    },
+    {
+      "id": 6,
+      "titulo": "Javascript Moderno",
+      "cor": "#9E6BBF",
+      "link_extra": {
+        "text": "Formação de Javascript moderno (es6, 7, 8+) na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Quem disse que gato não programa?",
+      "url": "https://www.youtube.com/watch?v=em41kgwRsxs"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Vanilla JS: Explicando a piada",
+      "url": "https://www.youtube.com/watch?v=TQjHFESNX30"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Programamos uma Ferramenta pro Youtube com JavaScript Puro (Vanilla JS) // Mão no Código #33",
+      "url": "https://www.youtube.com/watch?v=ScGwWsoC_-I"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Manipulando a DOM com Vanilla JS",
+      "url": "https://www.youtube.com/watch?v=aVB67Y31E4A"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Why 'vanilla JavaScript first' might NOT be the best approach!",
+      "url": "https://www.youtube.com/watch?v=Gwup7MV_fXs"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "JS Frameworks OR Vanilla JavaScript?",
+      "url": "https://www.youtube.com/watch?v=PSiXpsV5ZQc"
+    },
+    {
+      "id": 7,
+      "categoriaId": 2,
+      "titulo": "React JS - MELHOR GUIA para Iniciantes! (2020)",
+      "url": "https://www.youtube.com/watch?v=Ws9WVHhNq5M"
+    },
+    {
+      "id": 8,
+      "categoriaId": 2,
+      "titulo": "O que é ReactJS? - Série ReactJS",
+      "url": "https://www.youtube.com/watch?v=cEczlv669Oo"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "O que é React JS? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=6IuQUgeDPg0"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "Learn REACT JS in just 5 MINUTES (2020)",
+      "url": "https://www.youtube.com/watch?v=MRIMT0xPXFI"
+    },
+    {
+      "id": 11,
+      "categoriaId": 3,
+      "titulo": "O que é Angular e AngularJS? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=LFlNU30u7d8"
+    },
+    {
+      "id": 12,
+      "categoriaId": 3,
+      "titulo": "ANGULAR EM 7 MINUTOS - Tudo Que Você Precisa saber!",
+      "url": "https://www.youtube.com/watch?v=YX0y1FMlb8I"
+    },
+    {
+      "id": 13,
+      "categoriaId": 3,
+      "titulo": "5 motivos para aprender Angular",
+      "url": "https://www.youtube.com/watch?v=7tU5lEdWm_M"
+    },
+    {
+      "id": 14,
+      "categoriaId": 3,
+      "titulo": "Ainda vale a pena usar AngularJS? (Em 2019)",
+      "url": "https://www.youtube.com/watch?v=PSQLcLlbVZM"
+    },
+    {
+      "id": 15,
+      "categoriaId": 4,
+      "titulo": "VueJS em 1 hora! (Teoria e prática)",
+      "url": "https://www.youtube.com/watch?v=cSa-SMVMGsE"
+    },
+    {
+      "id": 16,
+      "categoriaId": 4,
+      "titulo": "Vue.js através de exemplos",
+      "url": "https://www.youtube.com/watch?v=mYIivScX2uk"
+    },
+    {
+      "id": 17,
+      "categoriaId": 4,
+      "titulo": "Por que React e não VueJS?",
+      "url": "https://www.youtube.com/watch?v=TPdUM1R9lQw"
+    },
+    {
+      "id": 18,
+      "categoriaId": 4,
+      "titulo": "Por que escolher VueJS? - Comparativo VueJS, Angular e React.",
+      "url": "https://www.youtube.com/watch?v=jk3NTOHIfFE"
+    },
+    {
+      "id": 19,
+      "categoriaId": 5,
+      "titulo": "Imersão React Live #02 - TypeScript no nosso projeto React, com Lucas Santos da Microsoft",
+      "url": "https://www.youtube.com/watch?v=SpWFDTvgS9k"
+    },
+    {
+      "id": 20,
+      "categoriaId": 5,
+      "titulo": "TypeScript com NodeJS do jeito certo! | Diego Fernandes",
+      "url": "https://www.youtube.com/watch?v=aTf8QTjw4RE"
+    },
+    {
+      "id": 21,
+      "categoriaId": 5,
+      "titulo": "SOLID com TypeScript // Live #37",
+      "url": "https://www.youtube.com/watch?v=899Qa6sQcRc"
+    },
+    {
+      "id": 22,
+      "categoriaId": 6,
+      "titulo": "Curso Web Moderno com JavaScript 2019 COMPLETO + Projetos",
+      "url": "https://www.youtube.com/watch?v=Rrx-eRzW0Xc"
+    },
+    {
+      "id": 23,
+      "categoriaId": 6,
+      "titulo": "[POLÊMICA] Pare de pensar em classes! | Série - POO para JS",
+      "url": "https://www.youtube.com/watch?v=po9Ik_v5koU"
+    },
+    {
+      "id": 24,
+      "categoriaId": 6,
+      "titulo": "Aula 1 - Curso Javascript moderno - Hello World no VSCode com NodeJS",
+      "url": "https://www.youtube.com/watch?v=jbBq6OKjj24"
+    },
+    {
+      "titulo": "Learn React JS - Full Course for Beginners - Tutorial 2019",
+      "url": "https://www.youtube.com/watch?v=DLX62G4lc44",
+      "categoriaId": 2,
+      "id": 25
+    }
+  ]
 }
