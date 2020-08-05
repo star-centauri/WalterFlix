@@ -18,7 +18,7 @@ function Home() {
   }, []);
 
   return (
-    <PageDefault paddingAll={0}>
+    <PageDefault>
       {dados.length === 0 && (<div>Loading...</div>)}
 
       {dados.map((categorie, index) => {

@@ -11,7 +11,7 @@ function CadastroCategoria() {
     descricao: '',
     cor: '#000',
   };
-  const { newCategoria, handleChange, cleanForm } = useForm(valuesDefault);
+  const { values, handleChange, cleanForm } = useForm(valuesDefault);
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
@@ -29,28 +29,28 @@ function CadastroCategoria() {
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {newCategoria.nome}
+        {values.nome}
       </h1>
 
       <form
         style={{ padding: '10px 50px' }}
         onSubmit={(event) => {
           event.preventDefault();
-          setCategorias([...categorias, newCategoria]);
+          setCategorias([...categorias, values]);
           cleanForm();
         }}
       >
 
         <FormField
           label="Nome:"
-          value={newCategoria.nome}
+          value={values.nome}
           onChange={handleChange}
           name="nome"
           type="text"
         />
         <FormField
           label="Descrição:"
-          value={newCategoria.descricao}
+          value={values.descricao}
           onChange={handleChange}
           name="descricao"
           type="textarea"
@@ -58,7 +58,7 @@ function CadastroCategoria() {
         />
         <FormField
           label="Cor:"
-          value={newCategoria.cor}
+          value={values.cor}
           onChange={handleChange}
           name="cor"
           type="color"

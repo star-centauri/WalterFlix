@@ -14,6 +14,12 @@ function getAllCategoriesWithVideos() {
     .then((response) => handlerError(response));
 }
 
+function getAll() {
+  return fetch(URL_CATEGORIES)
+    .then((response) => handlerError(response));
+}
+
 export default {
   getAllCategoriesWithVideos,
+  getAll,
 };

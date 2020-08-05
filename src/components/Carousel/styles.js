@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Title = styled.h3`
   font-style: normal;
@@ -9,7 +9,10 @@ export const Title = styled.h3`
   padding: 13px;
   line-height: 1;
   border-radius: 10px;
-  color: rgb(95, 25, 115);
+  ${({ color }) => css`
+    border: ${`1px solid ${color}`};
+    color: ${color};
+  `}
 
   @media (max-width: 800px) {
     font-size: 18px;
@@ -18,12 +21,12 @@ export const Title = styled.h3`
 `;
 
 export const ExtraLink = styled.a`
-  margin-left: 10px;
+  padding-left: 15px;
   text-decoration: none;
   transition: opacity .3s;
   &:hover,
   &:focus {
-    opacity: .5;
+    opacity: .8;
   }
   @media (max-width: 800px) {
     display: block;
@@ -49,7 +52,6 @@ export const VideoCardList = styled.ul`
 export const VideoCardGroupContainer = styled.section`
   color: white;
   min-height: 197px;
-  margin: 0px 50px 0px 50px;
   padding-bottom: 32px;
   border-bottom: solid 1px #aaaaaa8a;
 `;
